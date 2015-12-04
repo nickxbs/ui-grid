@@ -35,7 +35,7 @@
 
 <!-- <div class="row main"> -->
 <h2>Grid</h2>
-<div ui-grid="gridOptions" class="grid" ui-grid-resize-columns></div>
+<div ui-grid="gridOptions" class="grid" ui-grid-resize-columns ui-grid-cellNav></div>
 <!-- <div class="placeholder"> -->
 <!-- </div> -->
 
@@ -43,7 +43,7 @@
 <br>
 
 <script>
-    var app = angular.module('test', ['ui.grid', 'ui.grid.pinning', 'ui.grid.resizeColumns']);
+    var app = angular.module('test', ['ui.grid', 'ui.grid.pinning', 'ui.grid.resizeColumns','ui.grid.cellNav']);
     app.controller('Main', function($scope, $http) {
         $scope.gridOptions = {};
         $scope.gridOptions.columnDefs = [
@@ -71,4 +71,3 @@
 </script>
 </body>
 </html>
-        
